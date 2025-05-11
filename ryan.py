@@ -153,7 +153,7 @@ class Ryan:
         payload = { "account_auth": self.auth_token, "id": id }
         params = { "key": self.access_key, "id": id }
         response = requests.post(f"{__ENDPOINT_URL__}/set_id", params=params, data=payload)
-        response_decoded = response.json())
+        response_decoded = response.json()
         return response_decoded.get("ok")
     
     def get_player_car(self, car_id) -> any:
