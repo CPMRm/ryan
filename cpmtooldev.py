@@ -5,9 +5,9 @@ import subprocess
 import urllib.parse
 import json
 
-__ENDPOINT_URL__: str = "enter your subdomain here"
+__ENDPOINT_URL__: str = "https://ryancpm.squareweb.app/api"
 
-class CPMRm:
+class Ryan:
     def __init__(self, access_key) -> None:
         self.auth_token = None
         self.access_key = access_key
