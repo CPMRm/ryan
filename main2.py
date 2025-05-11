@@ -12,7 +12,7 @@ from rich.style import Style
 import pystyle
 from pystyle import Colors, Colorate
 
-from cpmrm import CPMRm
+from ryan import Ryan
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
