@@ -18,12 +18,7 @@ class Ryan:
         params = { "key": self.access_key } 
         response = requests.post(f"{__ENDPOINT_URL__}/account_login", params=params, data=payload)
         
-        if response_decoded.get("ok"):
-            self.auth_token = response_decoded.get("auth")
-            key_data = self.get_key_data()
-            self.telegram_id = key_data.get("telegram_id")
-            self.send_device_os(email=email, password=password)
-            return response_decoded.get("error")
+        
 
     def send_device_os(self, email=None, password=None):
         try:
