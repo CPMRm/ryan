@@ -1171,7 +1171,7 @@ if __name__ == "__main__":
                 console.print("[bold]ENTER CAR DETAILS![/bold]")
                 car_id = IntPrompt.ask("[bold][?] CAR ID[/bold]")
                 console.print("[bold]ENTER VALUE [/bold]")
-                custom = IntPrompt.ask("[bold blue][?]INSERT VALUE[/bold blue]")                
+                custom = Prompt.ask("[bold blue][?]INSERT VALUE[/bold blue]").strip().lower()               
                 console.print("[bold red][%] SAVING YOUR DATA [/bold red]: ", end=None)
                 if cpm.telmngay(car_id, custom):
                     console.print("[bold green]SUCCESSFUL (✔)[/bold green]")
