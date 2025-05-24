@@ -38,7 +38,7 @@ def gradient_text(text, colors):
 
 def banner(console):
     os.system('cls' if os.name == 'nt' else 'clear')
-    brand_name = "Ryan Toll 0.6"
+    brand_name = "Ryan Tool 0.6"
     
     text = Text(brand_name, style="bold black")
     
